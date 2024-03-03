@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Group3 } from "../assets/images";
 import { toast } from "react-toastify";
-import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
@@ -21,7 +20,7 @@ const Login = () => {
 
   return (
     <>
-      <div className="flex justify-center items-center h-screen overflow-x-hidden overflow-y-hidden">
+      <div className="flex justify-center items-center h-screen overflow-x-hidden">
         <div className="flex flex-col items-center gap-3">
           <div>
             <img src={Group3} alt="" />
