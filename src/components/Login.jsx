@@ -3,6 +3,7 @@ import { Group3 } from "../assets/images";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -12,7 +13,7 @@ const Login = () => {
     e.preventDefault();
     if (email != "" && password != "") {
       toast.success("User logged In");
-      navigate("/Home");
+      navigate('./Home');
     } else {
       toast.error("Invalid credentials");
     }
